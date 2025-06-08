@@ -69,6 +69,19 @@ class SignInPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(17),
                 ),
               ),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Center(
+                child: const TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Enter text', // change this to 'Email' or 'Password'
+                    border: InputBorder.none,
+                  ),
+                  style: TextStyle(
+                    color: Color(0xFF5C4015),
+                    fontFamily: 'Young Serif',
+                  ),
+                ),
+              ),
             ),
           ],
         ),
