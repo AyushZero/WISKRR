@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wiskrr/screens/signup_page.dart';
+import 'package:wiskrr/screens/signin_page.dart';
 import 'package:wiskrr/widgets/custom_textbox.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class SignInPage extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               const Text(
-                'Sign In',
+                'Sign Up',
                 style: TextStyle(
                   color: Color(0xFF5C4015),
                   fontSize: 30,
@@ -45,25 +45,9 @@ class SignInPage extends StatelessWidget {
               const CustomTextBox(hintText: 'Email Id/ Phone No.'),
               const SizedBox(height: 33),
               const CustomTextBox(hintText: 'Password'),
-              const SizedBox(height: 4),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(right: 20),
-                    child: Text(
-                      'Forgot Credentials?',
-                      style: TextStyle(
-                        color: Color(0xFF5C4015),
-                        fontSize: 14,
-                        fontFamily: 'Young Serif',
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 120),
+              const SizedBox(height: 33),
+              const CustomTextBox(hintText: 'Password'),
+              const SizedBox(height: 80),
               Container(
                 width: 125,
                 height: 43,
@@ -75,7 +59,7 @@ class SignInPage extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    'Sign In',
+                    'Sign Up',
                     style: TextStyle(
                       color: Color(0xFFFFEACC),
                       fontSize: 18,
@@ -88,10 +72,10 @@ class SignInPage extends StatelessWidget {
               TextButton(
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => const SignUpPage()),
+                  MaterialPageRoute(builder: (_) => const SignInPage()),
                 ),
                 child: const Text(
-                  'or Sign Up',
+                  'or Sign In',
                   style: TextStyle(
                     color: Color(0xFF5D4016),
                     fontSize: 12,
