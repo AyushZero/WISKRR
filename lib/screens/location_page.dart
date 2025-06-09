@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wiskrr/screens/name_page.dart';
+import 'package:wiskrr/screens/welcome_page.dart';
 import 'package:wiskrr/widgets/custom_textbox.dart';
 
 class LocPage extends StatelessWidget {
@@ -64,7 +65,7 @@ class LocPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => NamePage()),
+                    MaterialPageRoute(builder: (context) => WelcomePage()),
                   );
                 },
                 style: ElevatedButton.styleFrom(

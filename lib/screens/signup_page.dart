@@ -13,7 +13,7 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(  // <-- FIX: Add this
       backgroundColor: const Color(0xFFFFF3E1),  // move color here
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: size.width * 0.9,
           height: size.height,
           child: Column(
