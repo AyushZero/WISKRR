@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:wiskrr/screens/signin_page.dart';
 import 'package:wiskrr/widgets/custom_textbox.dart';
 
+import 'name_page.dart';
+
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
 
@@ -48,27 +50,31 @@ class SignUpPage extends StatelessWidget {
               const SizedBox(height: 33),
               const CustomTextBox(hintText: 'Password'),
               const SizedBox(height: 80),
-              Container(
-                width: 125,
-                height: 43,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFF5D4016),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => NamePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFF5D4016),
+                  foregroundColor: Color(0xFFFFEACC),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
                   ),
+                  minimumSize: Size(125, 43),
                 ),
-                child: const Center(
-                  child: Text(
-                    'Sign Up',
-                    style: TextStyle(
-                      color: Color(0xFFFFEACC),
-                      fontSize: 18,
-                      fontFamily: 'Young Serif',
-                      fontWeight: FontWeight.w400,
-                    ),
+                child: const Text(
+                  'Sign Up',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Young Serif',
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
+
               TextButton(
                 onPressed: () => Navigator.push(
                   context,
