@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wiskrr/widgets/custom_textbox.dart';
+import '../widgets/primary_button.dart';
 import 'location_page.dart';
 
 class NamePage extends StatelessWidget {
@@ -37,29 +38,14 @@ class NamePage extends StatelessWidget {
               const SizedBox(height: 33),
               const CustomTextBox(hintText: 'User Id'),
               const SizedBox(height: 120),
-              ElevatedButton(
+              PrimaryButton(
+                label: 'Next',
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LocPage()),
+                    MaterialPageRoute(builder: (context) => const LocPage()),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF5D4016),
-                  foregroundColor: Color(0xFFFFEACC),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  minimumSize: Size(125, 43),
-                ),
-                child: const Text(
-                  'Next',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontFamily: 'Young Serif',
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
               ),
             ],
           ),
