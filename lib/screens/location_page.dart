@@ -10,10 +10,10 @@ class LocPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Scaffold(  // <-- FIX: Add this
+    return Scaffold(
       backgroundColor: const Color(0xFFFFF3E1),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: size.width * 0.9,
           height: size.height,
           child: Column(

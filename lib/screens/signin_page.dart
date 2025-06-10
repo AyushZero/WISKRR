@@ -8,8 +8,8 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Scaffold(  // <-- FIX: Add this
-      backgroundColor: const Color(0xFFFFF3E1),  // move color here
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFF3E1),
       body: Center(
         child: SizedBox(
           width: size.width * 0.9,

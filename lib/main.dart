@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/signin_page.dart'; // import the separate sign-in widget
+import 'screens/signin_page.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xFFFFF3E1),
-      body: SignInPage(), // use the widget from signin_page.dart
+      body: SignInPage(),
     );
   }
 }
